@@ -1,0 +1,24 @@
+<svg width="900" height="650" viewBox="0 0 900 650" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Classic Shawarma Roll">
+  <rect width="900" height="650" rx="56" fill="url(#bg)"/>
+  <circle cx="712" cy="132" r="164" fill="#FF6A00" opacity=".16" filter="url(#blur)"/>
+  <circle cx="167" cy="510" r="156" fill="#FFB347" opacity=".11" filter="url(#blur)"/>
+
+  <ellipse cx="448" cy="560" rx="276" ry="45" fill="#000" opacity=".35"/>
+  <g transform="translate(170 72) rotate(-8 270 250)">
+    <path d="M132 93c113-58 283-66 421 4 20 10 26 36 11 52L313 426c-25 28-69 28-94 0L67 153c-12-22 3-48 65-60Z" fill="#F7D28A"/>
+    <path d="M88 158c139 62 311 65 474-5L315 426c-26 30-71 29-96-3L88 158Z" fill="url(#orange)" opacity=".95"/>
+    <path d="M150 128c78-32 265-41 368 3" stroke="#FFEAC1" stroke-width="24" stroke-linecap="round" opacity=".75"/>
+    <circle cx="214" cy="189" r="24" fill="#76D66B"/><circle cx="294" cy="177" r="18" fill="#E84022"/><circle cx="382" cy="190" r="22" fill="#FFE27A"/><circle cx="462" cy="174" r="18" fill="#6DD68F"/>
+    <path d="M192 241c75 44 166 45 273-8" stroke="#6B2112" stroke-width="29" stroke-linecap="round" opacity=".55"/>
+    <path d="M228 295c63 31 133 30 216-7" stroke="#fff" stroke-width="13" stroke-linecap="round" opacity=".6"/>
+  </g>
+
+  <defs>
+    <filter id="blur" x="-100" y="-100" width="1100" height="850" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="48"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="650"><stop stop-color="#141414"/><stop offset="1" stop-color="#222"/></linearGradient>
+    <linearGradient id="orange" x1="180" y1="120" x2="760" y2="555"><stop stop-color="#FFC46B"/><stop offset=".48" stop-color="#FF6A00"/><stop offset="1" stop-color="#D93600"/></linearGradient>
+    <linearGradient id="mint" x1="320" y1="70" x2="604" y2="591"><stop stop-color="#E9FFF3"/><stop offset=".5" stop-color="#78E7AA"/><stop offset="1" stop-color="#0FA968"/></linearGradient>
+    <linearGradient id="blue" x1="320" y1="70" x2="604" y2="591"><stop stop-color="#E6F6FF"/><stop offset=".5" stop-color="#59C7FF"/><stop offset="1" stop-color="#1369FF"/></linearGradient>
+    <linearGradient id="meat" x1="280" y1="165" x2="650" y2="520"><stop stop-color="#FFB56C"/><stop offset=".45" stop-color="#D95C24"/><stop offset="1" stop-color="#5B1D14"/></linearGradient>
+  </defs>
+</svg>

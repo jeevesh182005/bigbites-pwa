@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Poori shawarma illustration">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff6a00" stop-opacity=".95"/><stop offset="1" stop-color="#2a1205"/></linearGradient><radialGradient id="g" cx="45%" cy="35%" r="55%"><stop stop-color="#ffd66b"/><stop offset="1" stop-color="#ff8a00"/></radialGradient></defs>
+  <rect width="560" height="420" rx="48" fill="#111"/><circle cx="430" cy="90" r="120" fill="#ff6a00" opacity=".18"/><ellipse cx="280" cy="280" rx="190" ry="58" fill="#000" opacity=".35"/>
+  <g transform="translate(82 82)"><circle cx="110" cy="110" r="88" fill="url(#g)"/><circle cx="230" cy="92" r="88" fill="url(#g)"/><circle cx="300" cy="206" r="88" fill="url(#g)"/><circle cx="172" cy="218" r="88" fill="url(#g)"/><path d="M75 80c80 32 200 28 270 0" fill="none" stroke="#fff" opacity=".22" stroke-width="16" stroke-linecap="round"/><path d="M103 238c84 27 176 23 253-8" fill="none" stroke="#7a2b00" opacity=".35" stroke-width="16" stroke-linecap="round"/></g>
+</svg>

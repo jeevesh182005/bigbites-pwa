@@ -1,0 +1,25 @@
+<svg width="900" height="650" viewBox="0 0 900 650" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Blue Lagoon Mojito">
+  <rect width="900" height="650" rx="56" fill="url(#bg)"/>
+  <circle cx="712" cy="132" r="164" fill="#FF6A00" opacity=".16" filter="url(#blur)"/>
+  <circle cx="167" cy="510" r="156" fill="#FFB347" opacity=".11" filter="url(#blur)"/>
+
+  <ellipse cx="452" cy="555" rx="216" ry="42" fill="#000" opacity=".34"/>
+  <g transform="translate(280 90)">
+    <path d="M78 92h256l-34 362c-4 42-39 74-81 74H193c-42 0-78-32-82-74L78 92Z" fill="#E7FDF2" opacity=".22" stroke="#fff" stroke-width="12"/>
+    <path d="M113 202h187l-23 241c-3 25-24 44-49 44h-43c-25 0-46-19-49-44l-23-241Z" fill="url(#blue)" opacity=".95"/>
+    <path d="M130 170c55-21 104-22 153 0" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".65"/>
+    <circle cx="160" cy="274" r="26" fill="#EFFFF7" opacity=".7"/><circle cx="248" cy="318" r="20" fill="#EFFFF7" opacity=".6"/>
+    <path d="M211 124c22-63 72-70 115-63-28 45-66 74-115 63Z" fill="#7AD4FF"/>
+    <path d="M178 120c-33-52-2-92 36-123 11 52 0 94-36 123Z" fill="#298AFF"/>
+    <path d="M73 93h268" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".75"/>
+  </g>
+
+  <defs>
+    <filter id="blur" x="-100" y="-100" width="1100" height="850" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="48"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="650"><stop stop-color="#141414"/><stop offset="1" stop-color="#222"/></linearGradient>
+    <linearGradient id="orange" x1="180" y1="120" x2="760" y2="555"><stop stop-color="#FFC46B"/><stop offset=".48" stop-color="#FF6A00"/><stop offset="1" stop-color="#D93600"/></linearGradient>
+    <linearGradient id="mint" x1="320" y1="70" x2="604" y2="591"><stop stop-color="#E9FFF3"/><stop offset=".5" stop-color="#78E7AA"/><stop offset="1" stop-color="#0FA968"/></linearGradient>
+    <linearGradient id="blue" x1="320" y1="70" x2="604" y2="591"><stop stop-color="#E6F6FF"/><stop offset=".5" stop-color="#59C7FF"/><stop offset="1" stop-color="#1369FF"/></linearGradient>
+    <linearGradient id="meat" x1="280" y1="165" x2="650" y2="520"><stop stop-color="#FFB56C"/><stop offset=".45" stop-color="#D95C24"/><stop offset="1" stop-color="#5B1D14"/></linearGradient>
+  </defs>
+</svg>

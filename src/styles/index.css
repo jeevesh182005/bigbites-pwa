@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ff6a00;
+  --color-brand-dark: #0f0f0f;
+  --color-brand-charcoal: #1a1a1a;
+  --font-display: "Poppins", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: var(--font-body);
+  background: #0f0f0f;
+  --orange-glow: rgba(255, 106, 0, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  overscroll-behavior-y: contain;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  transform: translateZ(0);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 106, 0, 0.45);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.04);
+}
+
+@layer components {
+  .glass-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, rgba(255,255,255,0.085), rgba(255,255,255,0.04));
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
+  }
+
+  .orange-glow {
+    box-shadow: 0 0 24px rgba(255, 106, 0, 0.18);
+  }
+
+  .app-safe-bottom {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 92px);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .section-render {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 520px;
+  }
+}
+
+.menu-card-shell {
+  contain: layout paint style;
+  perspective: 1100px;
+}
+
+.flip-card {
+  perspective: 1100px;
+  touch-action: manipulation;
+}
+
+.flip-card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 420ms cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(.92); opacity: .45; }
+  80%, 100% { transform: scale(1.35); opacity: 0; }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  border-radius: inherit;
+  border: 1px solid rgba(255,106,0,.30);
+  animation: pulse-ring 2.8s ease-out infinite;
+}
+
+@media (max-width: 640px) {
+  html { scroll-behavior: auto; }
+  .section-render { content-visibility: visible; contain-intrinsic-size: auto; }
+  .pulse-ring::before { animation: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@keyframes cart-shake {
+  0%, 100% { transform: translate3d(0,0,0) rotate(0deg) scale(1); }
+  12% { transform: translate3d(-2px,0,0) rotate(-3deg) scale(1.03); }
+  24% { transform: translate3d(3px,0,0) rotate(3deg) scale(1.04); }
+  36% { transform: translate3d(-3px,0,0) rotate(-3deg) scale(1.04); }
+  48% { transform: translate3d(3px,0,0) rotate(3deg) scale(1.03); }
+  60% { transform: translate3d(-2px,0,0) rotate(-2deg) scale(1.02); }
+  72% { transform: translate3d(2px,0,0) rotate(2deg) scale(1.01); }
+  84% { transform: translate3d(0,0,0) rotate(0deg) scale(1); }
+}
+
+.cart-shake {
+  animation: cart-shake 720ms cubic-bezier(.28,.84,.42,1) both;
+}
+
+.modal-scroll-lock {
+  overscroll-behavior: contain;
+}
+
+.menu-card-shell {
+  content-visibility: auto;
+  contain-intrinsic-size: 390px;
+}
+
+@media (max-width: 640px) {
+  .glass-card { box-shadow: 0 10px 24px rgba(0,0,0,.24); }
+  .flip-card-inner { transition-duration: 300ms; }
+}

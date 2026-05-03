@@ -1,0 +1,43 @@
+{
+  "name": "Big Bites",
+  "short_name": "BigBites",
+  "description": "Premium mobile PWA for Big Bites shawarma, BBQ, mojitos, offers, contact and franchise enquiries.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "theme_color": "#ff6a00",
+  "background_color": "#000000",
+  "categories": ["food", "business", "shopping"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Menu",
+      "short_name": "Menu",
+      "description": "View Big Bites menu",
+      "url": "/menu",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact Big Bites",
+      "short_name": "Contact",
+      "description": "Call or WhatsApp Big Bites",
+      "url": "/contact",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
