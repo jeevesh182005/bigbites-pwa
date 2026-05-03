@@ -98,3 +98,22 @@ export async function saveOrderToGoogleSheets(order) {
 export function getQueuedOrdersCount() {
   return readQueue().length;
 }
+
+export async function getOrderStatus(orderId) {
+  if (!orderId) {
+    return {
+      ok: false,
+      message: 'Order ID is required',
+    };
+  }
+
+  const response = await fetch(
+    `/api/order-status?orderId=${encodeURIComponent(orderId)}&t=${Date.now()}`,
+    {
+      method: 'GET',
+      cache: 'no-store',
+    }
+  );
+
+  return response.json();
+} 

@@ -23,8 +23,10 @@ export default function App() {
       <div className="relative min-h-screen overflow-x-hidden bg-[#0f0f0f] text-white selection:bg-brand-orange/30 selection:text-white">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,#0f0f0f,#1a1a1a)]" />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-[radial-gradient(circle_at_50%_0%,rgba(255,106,0,.14),transparent_68%)]" />
+
         <LoadingScreen />
         <Navbar />
+
         <main className="relative z-10 mx-auto min-h-screen w-full max-w-6xl px-4 pb-28 pt-20 sm:px-6 lg:px-8 lg:pb-10">
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
@@ -34,10 +36,17 @@ export default function App() {
               <Route path="/franchise" element={<Franchise />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/cart" element={<Cart />} />
+
+              {/* Old route support */}
               <Route path="/track" element={<OrderTracking />} />
+
+              {/* New live tracking routes */}
+              <Route path="/tracking" element={<OrderTracking />} />
+              <Route path="/tracking/:orderId" element={<OrderTracking />} />
             </Routes>
           </AnimatePresence>
         </main>
+
         <InstallPrompt />
         <FloatingCartButton />
         <FloatingWhatsApp />
